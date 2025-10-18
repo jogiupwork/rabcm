@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script type="text/javascript">
+    function showPopup() {
+      const userAgreement = confirm("Thank you for contacting Robinsons Appliances! Before we continue, we would like to inform you that in the process of assisting you, we might ask you for your personal information. Please confirm if you are granting us full consent to collect, store, process, and dispose of personal information in accordance with our Privacy Policy. Do you agree?");
+      
+      if (userAgreement) {
+        // If user agrees, open the email client
+        window.location.href = "mailto:rabaguicmsm@robinsonsappliances.com.ph?subject=Inquiry&body=Hello,%0A%0AThank%20you%20for%20contacting%20Robinsons%20Appliances!%20Before%20we%20continue,%20we%20would%20like%20to%20inform%20you%20that%20in%20the%20process%20of%20assisting%20you,%20we%20might%20ask%20you%20for%20your%20personal%20information.%20Please%20confirm%20if%20you%20are%20granting%20us%20full%20consent%20to%20collect,%20store,%20process%20and%20dispose%20personal%20information%20in%20accordance%20with%20our%20Privacy%20Policy.%20Do%20you%20agree?%0A%0ABest%20regards,%0A[Your%20Name]";
+      } else {
+        // If they disagree, you can display a message or do nothing
+        alert("You chose to disagree. Please contact us later for more information.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showPopup()">Contact Us</button>
+</body>
+</html>
